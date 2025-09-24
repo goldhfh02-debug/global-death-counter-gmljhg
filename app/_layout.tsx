@@ -50,9 +50,14 @@ export default function RootLayout() {
           <Stack
             screenOptions={{
               headerShown: false,
-              animation: 'default',
+              animation: 'slide_from_right',
             }}
-          />
+          >
+            <Stack.Screen name="index" />
+            <Stack.Screen name="countries" />
+            <Stack.Screen name="statistics" />
+            <Stack.Screen name="about" />
+          </Stack>
         </GestureHandlerRootView>
     </SafeAreaProvider>
   );
